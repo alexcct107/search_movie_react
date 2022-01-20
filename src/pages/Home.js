@@ -3,7 +3,7 @@ import { Title } from '../components/Title';
 import { SearchForm } from '../components/SearchForm';
 import { MoviesList } from '../components/MoviesList';
 
-export default class Home extends Component {
+export class Home extends Component {
     state = { usedSearch: false, results: [] }
 
   _handleResults = (results) => {
