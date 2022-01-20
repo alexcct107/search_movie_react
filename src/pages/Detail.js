@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
+import { ButtonBackHome } from '../components/ButtonBackHome'
 
 const API_KEY ="5fa1383f"
 
@@ -36,6 +37,7 @@ export class Detail extends Component {
 
     render() {
         const { Title, Poster, Actors, Metascore, Plot } = this.state.movie
+
         return(
             <div className="container is-fluid">
                 
@@ -44,7 +46,8 @@ export class Detail extends Component {
                 <h3>{Actors}</h3>
                 <span>{Metascore}</span>
                 <p>{Plot}</p>
-                <button className="button is-warning" onClick={this._goBack}>Volver</button>
+                <ButtonBackHome />
+               
             </div>
         )
     }
