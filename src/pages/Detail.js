@@ -32,12 +32,13 @@ export class Detail extends Component {
         const { Title, Poster, Actors, Metascore, Plot } = this.state.movie
         return(
             <div className="container is-fluid">
-                <button className="button is-warning" onClick={this._goBack}>Volver</button>
+                
                 <h1>{Title}</h1>
                 <img src={Poster} alt={Title} />
                 <h3>{Actors}</h3>
                 <span>{Metascore}</span>
                 <p>{Plot}</p>
+                <button className="button is-warning" onClick={this._goBack}>Volver</button>
             </div>
         )
     }
