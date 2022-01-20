@@ -14,11 +14,11 @@ export class Movie extends Component {
         return(
             <div className="card">
   <div className="card-image">
-    <figure className="image">
+    <figure className="image is-4by3">
       <img
         src={poster}
         alt={title}
-      />
+      />    
     </figure>
   </div>
   <div className="card-content">
